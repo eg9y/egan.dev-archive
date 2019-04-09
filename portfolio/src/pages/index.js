@@ -26,9 +26,7 @@ export default function index(props) {
     getSpotify()
     return (
         <Layout location={props.location}>
-            <Contstraint>
-                <Home />
-            </Contstraint>
+            <Home />
             <Contstraint>
                 <Projects />
             </Contstraint>

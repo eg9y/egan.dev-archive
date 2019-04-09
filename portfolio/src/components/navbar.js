@@ -16,7 +16,7 @@ export default class NavBar extends Component {
     render() {
         const { location } = this.props;
         return (
-            <nav className="navbar is-spaced is-warning" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-spaced is-fixed-bottom is-warning" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <h1 className="is-size-3">
                         <Link to="/" className="has-text-black">
