@@ -29,7 +29,9 @@ export default class Layout extends React.Component {
               <html class="bg" />
             </Helmet>
             <NavBar location={location} />
-            {children}
+            <section>
+              {children}
+            </section>
           </div>
         )}
       />

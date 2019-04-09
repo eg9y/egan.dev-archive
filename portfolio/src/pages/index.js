@@ -14,9 +14,7 @@ export default function index(props) {
             <Contstraint>
                 <Home />
             </Contstraint>
-            <Contstraint>
-                <About />
-            </Contstraint>
+            <About />
             <Contstraint>
                 <Projects />
             </Contstraint>
