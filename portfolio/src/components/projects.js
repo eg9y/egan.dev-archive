@@ -3,15 +3,12 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
 export default ({ data }) => (
-  <section className="hero is-medium is-bold is-fullheight " >
-    <div className="container" id="projects">
+  <section className="hero is-medium is-bold is-fullheight get-into-view" id="projects">
+    <div className="container">
       <div className="hero-head">
-        <h1 className="title is-3">Projects</h1>
-      </div>
-      <div className="hero-body">
-        <p>
-          I'm an international student studying in United States as a Senior CS Undergrad in UCSC.
-  </p>
+        <h1 className="title is-1">
+          Projects
+        </h1>
       </div>
     </div>
   </section>
