@@ -3,3 +3,7 @@
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+
+.bg {
+	background-color: $primary-color;
+}

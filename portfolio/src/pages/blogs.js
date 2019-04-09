@@ -5,30 +5,26 @@ import Layout from "../components/layout"
 export default ({ data }) => {
   return (
     <Layout>
-      <section className="section">
-        <div>
-          <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-              <Link
-                to={node.fields.slug}
-                css="text-decoration: none;color: inherit;">
-                <h3
-                  css="margin-bottom: 10px;"
-                >
-                  {node.frontmatter.title}{" "}
-                  <span
-                    css="color: #bbb;"
-                  >
-                    — {node.frontmatter.date}
-                  </span>
-                </h3>
-                <p>{node.excerpt}</p>
-              </Link>
-            </div>
-          ))}
+      <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <Link
+            to={node.fields.slug}
+            css="text-decoration: none;color: inherit;">
+            <h3
+              css="margin-bottom: 10px;"
+            >
+              {node.frontmatter.title}{" "}
+              <span
+                css="color: #bbb;"
+              >
+                — {node.frontmatter.date}
+              </span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
         </div>
-      </section>
+      ))}
     </Layout>
   )
 }

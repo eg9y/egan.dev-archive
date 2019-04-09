@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from 'react'
 import '../styles/styles.scss'
 
-export default class navbar extends Component {
+export default class NavBar extends Component {
     state = {
         activeMenu: false,
     };
@@ -33,13 +33,13 @@ export default class navbar extends Component {
                 <div className={`navbar-menu navbar-end ${this.state.activeMenu ? 'is-active' : ''}`} >
                     <div className="navbar-item">
                         <p className="navbar-item has-text-weight-semibold">
-                            <Link to={'/about'} className="has-text-grey-darker">About</Link>
+                            <Link to={'/blogs'} className="has-text-grey-darker">About</Link>
                         </p>
                         <p className="navbar-item has-text-weight-semibold">
                             <Link to={'/blogs'} className="has-text-grey-darker">Blogs</Link>
                         </p>
                         <p className="navbar-item has-text-weight-semibold">
-                            <Link to={'/projects'} className="has-text-grey-darker">Projects</Link>
+                            <Link to={'/blogs'} className="has-text-grey-darker">Projects</Link>
                         </p>
                     </div>
                 </div>

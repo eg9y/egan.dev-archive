@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 import { StaticQuery, Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 
-import NavBar from '../components/navbar'
+import NavBar from './navbar'
 
 
 export default class Layout extends React.Component {
@@ -26,12 +26,10 @@ export default class Layout extends React.Component {
             className="container is-fluid"
           >
             <Helmet>
-              <html className="has-background-white" css="background:black;" />
+              <html class="bg" />
             </Helmet>
             <NavBar />
-            <div className="container section">
-              {children}
-            </div>
+            {children}
           </div>
         )}
       />

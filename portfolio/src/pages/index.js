@@ -1,29 +1,25 @@
-import React from "react"
-import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import React from 'react'
 
-export default ({ data }) => (
-  <Layout>
-    <section className="hero">
-      <div className="hero-body"></div>
-      <div className="container">
-        <h1 className="title is-1">
-          Hello Earth!
-            <span role="img" aria-labelledby="handwave">👋🏾</span>
-        </h1>
-        <h1 className="subtitle is-5 has-text-left">I'm Egan Bisma, an aspiring Software Engineering and Fullstack Web Developer</h1>
-        <h2 className="subtitle is-5">Please, make yourself at home <span role="img" aria-labelledby="handwave">🙂</span></h2>
-      </div>
-    </section >
-  </Layout >
-)
+import NavBar from '../components/navbar'
+import Contstraint from '../components/constraint'
+import Projects from '../components/projects'
+import About from '../components/about'
+import Home from '../components/home'
+import Layout from '../components/layout'
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  } 
-`
+
+export default function index() {
+    return (
+        <Layout>
+            <Contstraint>
+                <Home />
+            </Contstraint>
+            <Contstraint>
+                <About />
+            </Contstraint>
+            <Contstraint>
+                <Projects />
+            </Contstraint>
+        </Layout>
+    )
+}
