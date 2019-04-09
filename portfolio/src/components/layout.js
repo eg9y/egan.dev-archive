@@ -8,7 +8,7 @@ import NavBar from './navbar'
 
 export default class Layout extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, location = "/" } = this.props;
     return (
       <StaticQuery
         query={graphql`
@@ -28,7 +28,7 @@ export default class Layout extends React.Component {
             <Helmet>
               <html class="bg" />
             </Helmet>
-            <NavBar />
+            <NavBar location={location} />
             {children}
           </div>
         )}

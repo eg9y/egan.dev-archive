@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from 'react'
 import '../styles/styles.scss'
+import ScrollView from './scroll_view'
 
 export default class NavBar extends Component {
     state = {
@@ -13,6 +14,7 @@ export default class NavBar extends Component {
     };
 
     render() {
+        const { location } = this.props;
         return (
             <nav className="navbar is-fixed-top is-spaced is-warning" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
@@ -31,15 +33,11 @@ export default class NavBar extends Component {
                     </a>
                 </div>
                 <div className={`navbar-menu navbar-end ${this.state.activeMenu ? 'is-active' : ''}`} >
+
                     <div className="navbar-item">
+                        {location.pathname == "/" && <ScrollView />}
                         <p className="navbar-item has-text-weight-semibold">
-                            <Link to={'/blogs'} className="has-text-grey-darker">About</Link>
-                        </p>
-                        <p className="navbar-item has-text-weight-semibold">
-                            <Link to={'/blogs'} className="has-text-grey-darker">Blogs</Link>
-                        </p>
-                        <p className="navbar-item has-text-weight-semibold">
-                            <Link to={'/blogs'} className="has-text-grey-darker">Projects</Link>
+                            <Link to={'/blogs'} className="has-text-grey-darker">Blog</Link>
                         </p>
                     </div>
                 </div>

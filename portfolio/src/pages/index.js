@@ -8,9 +8,9 @@ import Home from '../components/home'
 import Layout from '../components/layout'
 
 
-export default function index() {
+export default function index(props) {
     return (
-        <Layout>
+        <Layout location={props.location}>
             <Contstraint>
                 <Home />
             </Contstraint>
