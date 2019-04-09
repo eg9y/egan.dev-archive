@@ -1,5 +1,4 @@
 module.exports = {
-    pathPrefix: `/static`,
     siteMetadata: {
         title: 'Egan Bisma',
         author: 'Egan Bisma',

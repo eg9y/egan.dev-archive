@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { withPrefix } from 'gatsby'
+import floor_line from "./images/floor_line.svg"
 
 function getHour() {
   const hour = (new Date()).getHours();
@@ -31,7 +31,7 @@ export default ({ data }) => (
         </div>
       </div>
       <div id="floor_line">
-        <img src={withPrefix('floor_line.svg')} alt="" />
+        <img src={floor_line} alt="" />
       </div>
     </section>
   </section>
