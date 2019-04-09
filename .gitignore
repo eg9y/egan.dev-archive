@@ -1,4 +1,6 @@
 change_identity.sh
-node_modules
+portfolio/node_modules
 .DS_Store
 .cache
+portfolio/public
+portfolio/package-lock.json
