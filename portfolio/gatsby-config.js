@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: `/static`,
     siteMetadata: {
         title: 'Egan Bisma',
         author: 'Egan Bisma',
@@ -47,7 +48,6 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography`,
             },
         },
-        pathPrefix: `/static`
     ],
 }
 
