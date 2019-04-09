@@ -8,13 +8,13 @@ export default ({ data, location }) => {
       <section className="hero is-medium is-bold">
         <div className="hero-body">
           <div className="container">
-            <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
+            <h2 className="title">{data.allMarkdownRemark.totalCount} Posts</h2>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <div key={node.id}>
                 <Link
                   to={node.fields.slug}
                   css="text-decoration: none;color: inherit;">
-                  <h3
+                  <h3 className="title"
                     css="margin-bottom: 10px;"
                   >
                     {node.frontmatter.title}{" "}
@@ -24,7 +24,7 @@ export default ({ data, location }) => {
                       — {node.frontmatter.date}
                     </span>
                   </h3>
-                  <p>{node.excerpt}</p>
+                  <p className="subtitle">{node.excerpt}</p>
                 </Link>
               </div>
             ))}

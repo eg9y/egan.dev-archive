@@ -37,6 +37,9 @@ export default class NavBar extends Component {
                     <div className="navbar-item">
                         {location.pathname == "/" && <ScrollView />}
                         <p className="navbar-item has-text-weight-semibold">
+                            <Link to={'/current_status'} className="has-text-grey-darker">Status</Link>
+                        </p>
+                        <p className="navbar-item has-text-weight-semibold">
                             <Link to={'/blogs'} className="has-text-grey-darker">Blog</Link>
                         </p>
                     </div>

@@ -23,13 +23,12 @@ export default class Layout extends React.Component {
         }
         render={data => (
           <div
-            className="container is-fluid"
           >
             <Helmet>
               <html class="bg" />
             </Helmet>
             <NavBar location={location} />
-            <section>
+            <section className="container is-fluid">
               {children}
             </section>
           </div>

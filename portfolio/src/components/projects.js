@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 
 export default ({ data }) => (
   <section className="hero is-medium is-bold is-fullheight get-into-view" id="projects">
-    <div className="container">
-      <div className="hero-head">
+    <div className="hero-head">
+      <div className="container">
         <h1 className="title is-1">
           Projects
         </h1>
