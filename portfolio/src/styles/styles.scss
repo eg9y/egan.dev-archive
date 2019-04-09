@@ -4,6 +4,9 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+
+$navbar-box-shadow-size: 0 12px 0 0;
+
 .bg {
 	background-color: $primary-color;
 }
@@ -19,7 +22,7 @@
 }
 
 .get-into-view {
-	padding-top: 7rem;
+	padding-top: 4rem;
 }
 
 .get-into-view-main {
@@ -31,3 +34,9 @@
 .chart {
 	max-width: 35rem;
 }
+
+.is-vtop {
+	-webkit-box-align: start;
+	   -ms-flex-align: start;
+		  align-items: start;
+  }
