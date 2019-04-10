@@ -56,9 +56,104 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	align-self: center;
 }
 
+@media screen and (max-width: 420px) {
+	#my-name {
+		font-size: 2em !important;
+	}
+	#greetings {
+		text-align: center;
+	}
+}
+
+#my-name {
+	font-size: 4em;
+}
+
+#title {
+	font-size: 3em;
+}
+
 .home_grid {
 	display: grid;
+	// min-height: 500px;
 	height: 90vh;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows:1fr 1fr;
+}
+
+.navy {
+	background-color: $navy;
+}
+
+.secondary-color {
+	background-color: $secondary-color;
+}
+
+#about-me-grid {
+	display: grid;
+	height: 90vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+
+	#undergrad {
+		font-size: 4em;
+		grid-column: 1/span 3;
+		grid-row: 1/span 3;
+		align-self: start;
+		line-height: 60%;
+		font-weight: bolder;
+	}
+	#nationality {
+		font-size: 4em;
+		grid-column: 2/span 2;
+		grid-row: 2/span 3;
+		// align-self: end;
+		line-height: 120%;
+		font-weight: lighter;
+	}
+	#netflix {
+		font-size: 2em;
+		grid-column: 1/ span 2;
+		grid-row: 3/ span 3;
+		align-self: start;
+		line-height: 100%;
+		font-weight: lighter;
+		font-style: italic;
+		font-family: 'Courier New', Courier, monospace;
+		text-align: left;
+	}
+	#self-taught {
+		font-size: 7em;
+		grid-column: 3/span 2;
+		grid-row: 3/ span 3;
+		line-height: 60%;
+		font-weight: lighter;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	#dark-mode {
+		font-size: 5em;
+		grid-column: 4/ span 2;
+		grid-row: 1/ span 2;
+		align-self: center;
+		word-spacing: 220%;
+		justify-self: center;
+		line-height: 120%;
+		font-weight: lighter;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+	#resume {
+		font-size: 5em;
+		grid-column: 1/ span 2;
+		grid-row: 4/ span 1;
+		grid-column: 1/ span 2;
+		grid-row: 3/ span 3;
+		align-self: center;
+		justify-self: center;
+		line-height: 60%;
+		font-weight: lighter;
+	}
+}
+
+#icon {
+	max-height: 10px;
 }

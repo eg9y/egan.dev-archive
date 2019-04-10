@@ -18,15 +18,15 @@ export default ({ data }) => (
   <section className="hero is-medium is-bold is-fullheight get-into-view-main">
     <section className="home_grid">
       <div className="container" id="greetings">
-        <h1 className="title is-1 ">
-          Good {getHour()}!
+        <h1 id="title">
+          Good {getHour() || "day"}!
           <span role="img" aria-labelledby="handwave">👋🏾</span>
         </h1>
-        <h2 className="subtitle is-1 ">My name is Egan Bisma.</h2>
+        <h2 className="subtitle" id="my-name">My name is Egan Bisma.</h2>
         <div className="columns">
           <div className="column is-three-fifths">
-            <h2 className="title is-2	home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
-            <p className="title is-3 feel_good">Please, make yourself at home</p>
+            <h2 className="title is-4	home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
+            <p className="title is-5 feel_good">Please, make yourself at home</p>
           </div>
         </div>
       </div>
