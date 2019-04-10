@@ -6,8 +6,8 @@ import doggo from "./images/doggo.svg"
 
 export default function about() {
   return (
-    <section className="hero is-medium is-bold is-fullheight get-into-view" id="about">
-      <div className="hero-head">
+    <section className="hero is-large is-bold is-fullheight get-into-view" id="about">
+      <div className="hero-body">
         <div className="container content">
           <h1 className="title is-1">
             About me
@@ -20,7 +20,7 @@ export default function about() {
             <p id="nationality">Proud Indonesian
               <span role="img" aria-labelledby="handwave">🇮🇩</span>
             </p>
-            <p id="dark-mode">Dark mode lover</p>
+            <p id="dark-mode">Dark mode aficionado</p>
             <p className="image is-96x96" id="crack"><img src={crack} /></p>
             <p id="netflix">Professional Netflix viewer</p>
             <a id="resume" href="https://ibb.co/xS7sG8Z" target="_blank" className="has-text-weight-bold">Kick-ass résumé</a>

@@ -10,7 +10,7 @@ import cramwithme from "./images/cramwithme.svg"
 import feelsociety from "./images/feelsociety.svg"
 
 export default ({ data }) => (
-  <section className="hero is-bold is-medium is-fullheight get-into-view" id="projects">
+  <section className="hero is-bold is-small get-into-view" id="projects">
     <div className="hero-head">
       <h1 className="title is-2">Side Projects</h1>
       <h4 className="subtitle is-5">Here are a list of projects I developed.</h4>
@@ -44,7 +44,7 @@ export default ({ data }) => (
               preview="https://aqueous-coast-83469.herokuapp.com/"
               source="https://github.com/VVNoodle/CureHut"
               icon={feelsociety}
-              icon_class="is-128x128"
+              icon_class="is-96x96"
             />
           </div>
           <div className="column">

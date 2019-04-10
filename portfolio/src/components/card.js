@@ -5,7 +5,7 @@ import "../styles/styles.scss";
 export default function card(props) {
     const { name, desc, preview, source, icon, icon_class } = props;
     const style = {
-        'margin-right': '1rem'
+        'marginRight': '1rem'
     };
     return (
         <div className="box">
