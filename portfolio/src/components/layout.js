@@ -20,8 +20,6 @@ export default class Layout extends React.Component {
     this.setState({
       is_dropshadow: scrollTop >= 160 ? true : false
     });
-    console.log(this.state.is_dropshadow)
-    console.log(scrollTop)
   }
 
   render() {

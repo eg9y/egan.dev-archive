@@ -12,10 +12,10 @@ export default function card(props) {
             <div className="media">
                 <div className="media-content">
                     <div className="content">
-                        <p className="title is-5 has-text-weight-semibold">
+                        <p className="title is-3 has-text-weight-semibold">
                             {name}
                         </p>
-                        <p className="subtitle is-6">
+                        <p className="subtitle is-4">
                             {desc}
                         </p>
 
@@ -31,8 +31,8 @@ export default function card(props) {
 
                     </div>
                 </div>
-                <figure className="media-right">
-                    <p className={`image ${icon_class}`} id="icon">
+                <figure className="media-right" id="icon">
+                    <p className={`image ${icon_class}`} >
                         <img src={icon} />
                     </p>
                 </figure>
