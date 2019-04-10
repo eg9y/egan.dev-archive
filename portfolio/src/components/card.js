@@ -4,26 +4,31 @@ import "../styles/styles.scss";
 
 export default function card(props) {
     const { name, desc, preview, source, icon, icon_class } = props;
+    const style = {
+        'margin-right': '1rem'
+    };
     return (
         <div className="box">
             <div className="media">
                 <div className="media-content">
                     <div className="content">
-                        <p className="title is-5">
+                        <p className="title is-5 has-text-weight-semibold">
                             {name}
                         </p>
                         <p className="subtitle is-6">
                             {desc}
                         </p>
-                        <a href={preview} target="_blank" className="button">
-                            {preview
-                                ? "preview"
-                                : "coming soon..."
-                            }
-                        </a>
-                        {source
-                            && <a href={source} target="_blank" className="button"> {`</source>`}</a>
+
+                        {preview
+                            && <a href={preview} target="_blank" className="button is-outlined" style={style}>"preview"</a>
+
                         }
+
+                        {source
+                            ? <a href={source} target="_blank" className="button is-outlined has-text-weight-bold">{"</source>"}</a>
+                            : <a href={source} target="_blank" disabled className="button has-text-weight-bold">coming soon...</a>
+                        }
+
                     </div>
                 </div>
                 <figure className="media-right">

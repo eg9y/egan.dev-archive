@@ -22,7 +22,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 }
 
 .get-into-view {
-	padding-top: 4rem;
+	padding-top: 2rem;
 }
 
 .get-into-view-main {
@@ -126,6 +126,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		font-size: 7em;
 		grid-column: 3/span 2;
 		grid-row: 3/ span 3;
+		align-self: flex-start;
 		line-height: 60%;
 		font-weight: lighter;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -144,13 +145,38 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	#resume {
 		font-size: 5em;
 		grid-column: 1/ span 2;
-		grid-row: 4/ span 1;
-		grid-column: 1/ span 2;
 		grid-row: 3/ span 3;
 		align-self: center;
 		justify-self: center;
 		line-height: 60%;
 		font-weight: lighter;
+	}
+
+	#crack {
+		grid-column: 1/ span 2;
+		grid-row: 2/ span 1;
+		align-self: center;
+		justify-self: start;
+	}
+
+	#doggo {
+		grid-column: 3/ span 1;
+		grid-row: 1/ span 2;
+		width: 30vw;
+		align-self: center;
+		justify-self: start;
+	}
+
+	#playlist {
+		grid-column: 4/ span 3;
+		grid-row: 3/ span 1;
+		align-self: center;
+		justify-self: start;
+		transform: rotate(75deg);
+		
+		#iframe {
+			opacity: 0.3;
+		}
 	}
 }
 
