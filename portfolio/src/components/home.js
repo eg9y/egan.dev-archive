@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Footer from './footer'
+
 import floor_line from "./images/floor_line.svg"
 
 function getHour() {
@@ -17,6 +19,9 @@ function getHour() {
 export default ({ data }) => (
   <section className="hero is-medium is-bold is-fullheight get-into-view-main">
     <section className="home_grid">
+      <div id="booter">
+        <Footer />
+      </div>
       <div className="container" id="greetings">
         <h1 id="title">
           Good {getHour() || "day"}!

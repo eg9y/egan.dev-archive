@@ -4,10 +4,11 @@ import { Link } from "gatsby"
 import crack from "./images/crack.svg"
 import doggo from "./images/doggo.svg"
 
+
 export default function about() {
   return (
-    <section className="hero is-large is-bold is-fullheight get-into-view" id="about">
-      <div className="hero-body">
+    <section className="section get-into-view" id="about">
+      <div className="">
         <div className="container content">
           <h1 className="title is-1">
             About me
@@ -31,7 +32,6 @@ export default function about() {
           </div>
         </div>
       </div>
-
     </section>
   )
 }
