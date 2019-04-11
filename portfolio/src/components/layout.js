@@ -44,15 +44,13 @@ export default class Layout extends React.Component {
               <html class="bg has-navbar-fixed-bottom">
               </html>
               <title>Egan Bisma</title>
-              <link rel="icon"
-                type="image/svg"
-                href={favicon}></link>
+              <link rel="shortcut icon" type='image/svg' href={favicon} />
             </Helmet>
             <NavBar location={location} is_dropshadow={this.state.is_dropshadow} />
             <section className="container is-fluid">
               {children}
             </section>
-          </div>
+          </ div>
         )}
       />
     )
