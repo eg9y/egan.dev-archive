@@ -6,11 +6,11 @@ export default function scroll_view() {
     return (
         <React.Fragment>
             <ScrollIntoView selector="#projects">
-                <p className="navbar-item has-text-weight-semibold">
-                    <a className="has-text-grey-darker">
+                <a className="has-text-grey-darker">
+                    <p className="navbar-item has-text-weight-semibold">
                         Projects
-                            </a>
                 </p>
+                </a>
             </ScrollIntoView>
             <ScrollIntoView selector="#about">
                 <p className="navbar-item has-text-weight-semibold">

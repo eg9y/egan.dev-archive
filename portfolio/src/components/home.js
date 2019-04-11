@@ -22,18 +22,16 @@ export default ({ data }) => (
       <div id="booter">
         <Footer />
       </div>
-      <div className="container" id="greetings">
+      <div className="" id="greetings">
         <h1 id="title">
           Good {getHour() || "day"}!
           <span role="img" aria-labelledby="handwave">👋🏾</span>
         </h1>
-        <h2 className="subtitle" id="my-name">My name is Egan Bisma.</h2>
-        <div className="columns">
-          <div className="column is-three-fifths">
-            <h2 className="title is-4	home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
-            <p className="title is-5 feel_good">Please, make yourself at home</p>
-          </div>
-        </div>
+        <h2 id="my-name">My name is Egan Bisma.</h2>
+      </div>
+      <div id="more-intro">
+        <h2 className="title home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
+        <p className="title is-5 feel_good">Please, make yourself at home</p>
       </div>
       <div id="floor_line">
         <img src={floor_line} alt="" />

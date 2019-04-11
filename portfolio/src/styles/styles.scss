@@ -11,15 +11,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	background-color: $primary-color;
 }
 
-.home_title {
-	color: $navy;
-}
 
-.feel_good {
-	// -webkit-text-stroke: 2px #345995;
-	font-weight: bold;
-	font-family: cursive;
-}
 
 .get-into-view {
 	padding-top: 1rem;
@@ -36,48 +28,69 @@ $navbar-box-shadow-size: 0 12px 0 0;
 }
 
 
-#floor_line {
-	width: 90vw;
-	margin-top: 8vh;
-
-	grid-column: 1/span 3;
-	grid-row: 3/span 1;
-	justify-self: center;
-	align-self: end;
-}
-
-#desk {
-	width: 5vw;
-}
-
-#greetings {
-	grid-column: 1/span 3;
-	grid-row: 2/span 2;
-	align-self: center;
-}
-
-#booter {
-	grid-column: 1/span 1;
-	grid-row: 1/ span 1;
-	align-self: end;
-	justify-self: start;
-
-}
-
-#my-name {
-	font-size: 4em;
-}
-
-#title {
-	font-size: 3em;
-}
 
 .home_grid {
 	display: grid;
 	// min-height: 500px;
 	height: 90vh;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows:0.3fr 1fr 1fr;
+	grid-template-rows:0.3fr 1.3fr 1fr;
+
+	#booter {
+		grid-column: 1/span 1;
+		grid-row: 1/ span 1;
+		align-self: end;
+		justify-self: start;
+	}
+
+	#greetings {
+		grid-column: 1/span 3;
+		grid-row: 2/span 1;
+		align-self: flex-end;
+		justify-self: flex-start;
+	}
+
+	#more-intro {
+		max-width: 70vw;
+		grid-column: 1/span 1;
+		grid-row: 3/span 1;
+		align-self: flex-start;
+		justify-self: flex-start;
+	}
+
+	.home_title {
+		color: $navy;
+		font-size: 3em;
+	}
+	
+	.feel_good {
+		// -webkit-text-stroke: 2px #345995;
+		font-weight: bold;
+		font-family: cursive;
+	}
+
+
+	#floor_line {
+		width: 90vw;
+		margin-top: 8vh;
+
+		grid-column: 1/span 3;
+		grid-row: 3/span 1;
+		justify-self: center;
+		align-self: end;
+	}
+
+	#desk {
+		width: 5vw;
+	}
+
+	#my-name {
+		font-size: 5em;
+	}
+
+	#title {
+		font-size:3em;
+	}
 }
 
 .navy {
@@ -117,6 +130,13 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	padding-bottom: 5rem;
 }
 
+#icon {
+	max-height: 10px;
+	padding-top: 5%;
+	padding-right: 5%;
+}
+
+// desktop
 @media screen and (min-width: 1001px) {
 	#about-me-grid {
 		display: grid;
@@ -211,6 +231,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	}
 	
 }
+
+//tablet
 @media screen and (min-width: 421px) and (max-width: 1000px) {
 	#about-me-grid {
 		display: grid;
@@ -308,18 +330,32 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	
 }
 
-#icon {
-	max-height: 10px;
-	padding-top: 5%;
-	padding-right: 5%;
-}
-
+// Mobile
 @media screen and (max-width: 420px) {
-	#my-name {
-		font-size: 2em !important;
-	}
-	#greetings {
-		text-align: center;
+	.home_grid {
+		#my-name {
+			font-size: 1.5rem !important; 
+			text-align: center;
+		}
+
+		#greetings {
+			justify-self: center;
+		}
+
+		#title {
+			text-align: center !important;
+		}
+	
+		#more-intro {
+			align-self: flex-start;
+			justify-self: center;
+
+			.home_title {
+				font-size: 1.5rem !important; 
+				text-align: justify;
+				text-justify: distribute;
+			}
+		}
 	}
 
 	#about-me-grid {

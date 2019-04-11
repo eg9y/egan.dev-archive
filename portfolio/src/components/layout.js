@@ -4,6 +4,7 @@ import { StaticQuery, Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 
 import NavBar from './navbar'
+import favicon from "./images/cramwithme.svg"
 
 
 export default class Layout extends React.Component {
@@ -40,7 +41,12 @@ export default class Layout extends React.Component {
           <div
           >
             <Helmet>
-              <html class="bg" />
+              <html class="bg has-navbar-fixed-bottom">
+              </html>
+              <title>Egan Bisma</title>
+              <link rel="icon"
+                type="image/svg"
+                href={favicon}></link>
             </Helmet>
             <NavBar location={location} is_dropshadow={this.state.is_dropshadow} />
             <section className="container is-fluid">

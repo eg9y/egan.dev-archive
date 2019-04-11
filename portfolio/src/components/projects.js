@@ -14,7 +14,7 @@ export default ({ data }) => (
     <div className="hero-head">
       <h1 className="title is-2">Side Projects</h1>
       <h4 className="subtitle is-5">Here are a list of projects I developed.</h4>
-      <section className="">
+      <section className="hero-body">
         <section className="columns">
           <div className="column">
             <Card

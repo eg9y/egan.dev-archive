@@ -15,11 +15,9 @@ export default class index extends Component {
         return (
             <Layout location={this.props.location}>
                 <Home />
-                <Contstraint>
-                    <Projects />
-                </Contstraint>
+                <Projects />
                 <About />
-            </Layout>          
-        )        
+            </Layout>
+        )
     }
 }
