@@ -5,17 +5,16 @@ import { findDOMNode } from 'react-dom'
 import '../styles/styles.scss'
 import ScrollView from './scroll_view'
 
+import logo from './images/logo.svg'
+
 export default class NavBar extends Component {
     name = (
         <div className="navbar-brand">
-            <h1 className="is-size-3-tablet is-size-5-mobile">
-                <Link to="/" className="has-text-black">
-                    Egan Bisma
-        </Link>
-            </h1>
+            <Link to="/" className="has-text-black ">
+                <img src={logo} alt="Egan Bisma" id="logo" />
+            </Link>
         </div>
     )
-
 
     render() {
         const { location, is_dropshadow } = this.props;

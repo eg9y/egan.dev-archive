@@ -4,7 +4,7 @@ import { StaticQuery, Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 
 import NavBar from './navbar'
-import favicon from "./images/cramwithme.svg"
+import favicon from "./images/favicon.svg"
 
 
 export default class Layout extends React.Component {
