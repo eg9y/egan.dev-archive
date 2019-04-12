@@ -19,7 +19,7 @@ export default class NavBar extends Component {
     render() {
         const { location, is_dropshadow } = this.props;
         return (
-            <nav className="navbar is-mobile is-spaced is-fixed-bottom is-warning" id={is_dropshadow ? "navbar-dropit" : "navbar-containit"} role="navigation" aria-label="main navigation">
+            <nav className="navbar  is-spaced is-fixed-bottom is-warning" id={is_dropshadow ? "navbar-dropit" : "navbar-containit"} role="navigation" aria-label="main navigation">
                 {this.name}
                 <div className={`navbar-menu navbar-end `} >
 

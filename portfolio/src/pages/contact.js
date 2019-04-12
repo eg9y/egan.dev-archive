@@ -6,7 +6,7 @@ export default function form() {
     return (
         <Layout>
             <div class="section">
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" action="/" data-netlify="true">
                     <div className="field">
                         <p>
                             <label className="label">
