@@ -22,6 +22,24 @@ $navbar-box-shadow-size: 0 12px 0 0;
     transition:         $what $time $how;
 }
 
+.project_title {
+	padding-right: 1vw;
+	font-size: 2vw;
+}
+
+.project_image {
+	width: 25vw !important;
+	margin: 0 auto;	
+}
+
+.right_pad {
+	padding-right: 5vw;
+}
+
+.cramwithme-pad {
+	padding-bottom: 13vh;
+}
+
 #logo {
 	padding-left: 10%;
 	width: 30%;
@@ -53,7 +71,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	// min-height: 500px;
 	height: 85vh;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows:0.3fr 1fr 1fr;
+	grid-template-rows:0.1fr 1fr 1fr .5fr;
 	padding-left: 4vw;
 
 	#booter {
@@ -95,7 +113,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		margin-top: 8vh;
 
 		grid-column: 1/span 3;
-		grid-row: 3/span 1;
+		grid-row: 4/span 1;
 		justify-self: center;
 		align-self: end;
 	}
@@ -346,20 +364,18 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		grid-template-rows:0.3fr 0.3fr 1fr;
 		padding-left: 0;
 
-		#my-name {
-			font-size: 1.5rem !important; 
-			text-align: center;
-		}
+		
 
 		#greetings {
 			justify-self: center;
+			#my-name {
+				font-size: 1.5rem !important; 
+			}
+			#title {
+				font-size: 1.5rem !important; 
+			}
 		}
 
-		#title {
-			text-align: center !important;
-			font-size: 2.3rem !important; 
-		}
-	
 		#more-intro {
 			align-self: flex-start;
 			justify-self: center;
@@ -379,27 +395,27 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		// background-color: #fff;
 		display: grid;
 		height: 90vh;
-		grid-template-columns: 1fr;
-		grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 230px;
+		grid-template-rows: span(1fr, 7);
 	
 		#undergrad {
-			font-size: 3em;
+			font-size: 10vw;
 			grid-row: 1/span 1;
 			grid-column: 1/span 1;
 			line-height: 60%;
 			font-weight: bolder;
 		}
 		#nationality {
-			font-size: 4em;
-			grid-row: 1/span 2;
+			font-size: 10vw;
+			grid-row: 2/span 1;
 			grid-column: 1/span 1;
 			line-height: 90%;
 			font-weight: lighter;
 			align-self: center;
 		}
 		#self-taught {
-			font-size: 4em;
-			grid-row: 2/span 2;
+			font-size: 14vw;
+			grid-row: 3/span 1;
 			grid-column: 1/span 1;
 			line-height: 60%;
 			font-weight: 300;
@@ -407,8 +423,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		}
 		#dark-mode {
-			font-size: 3em;
-			grid-row: 3/span 2;
+			font-size: 10vw;
+			grid-row: 4/span 1;
 			grid-column: 1/span 1;
 			line-height: 120%;
 			font-weight: bolder;
@@ -416,8 +432,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			font-family: Georgia, 'Times New Roman', Times, serif;
 		}
 		#netflix {
-			font-size: 2em;
-			grid-row: 3/span 2;
+			font-size: 10vw;
+			grid-row: 5/span 1;
 			grid-column: 1/span 1;
 			line-height: 60%;
 			font-style: italic;
@@ -426,8 +442,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			font-family: 'Courier New', Courier, monospace;
 		}
 		#resume {
-			font-size: 5em;
-			grid-row: 5/span 1;
+			font-size: 15vw;
+			grid-row: 6/span 1;
 			grid-column: 1/span 1;
 			line-height: 80%;
 			font-weight: bolder;
@@ -437,21 +453,23 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		}
 	
 		#crack {
-			font-size: 1em;
+			font-size: 1vw;
 			grid-row: 1/span 2;
 			align-self: center;
 			margin-left: 55vw;
 			grid-column: 1/span 1;
 			line-height: 60%;
+			opacity: .4;
 		}
 	
 		#doggo {
-			max-width: 250px;
+			max-width: 150px;
 			grid-row: 3/span 2;
-			margin-left: 55vw;
 			grid-column: 1/span 1;
 			line-height: 60%;
 			align-self: center;
+			justify-self: center;
+			opacity: .3;
 		}
 	
 		#playlist {

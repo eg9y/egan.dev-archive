@@ -23,12 +23,20 @@ export default class NavBar extends Component {
                 {this.name}
                 <div className={`navbar-menu navbar-end `} >
 
-                    {location.pathname == "/" && <ScrollView />}
+                    {location.pathname == "/"
+                        ? <ScrollView />
+                        : <p className="navbar-item has-text-weight-semibold">
+                            <Link to='/' className="has-text-grey-darker">Home</Link>
+                        </p>
+                    }
                     <p className="navbar-item has-text-weight-semibold">
-                        <Link to={'/current_status'} className="has-text-grey-darker">Status</Link>
+                        <Link to='/current_status' className="has-text-grey-darker">Status</Link>
                     </p>
                     <p className="navbar-item has-text-weight-semibold">
-                        <Link to={'/blogs'} className="has-text-grey-darker">Blog</Link>
+                        <Link to='/blogs' className="has-text-grey-darker">Blog</Link>
+                    </p>
+                    <p className="navbar-item has-text-weight-semibold">
+                        <Link to='/contact' className="has-text-grey-darker">Contact</Link>
                     </p>
                 </div>
             </nav>

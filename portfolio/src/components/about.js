@@ -7,7 +7,7 @@ import doggo from "./images/doggo.svg"
 
 export default function about() {
   return (
-    <section className="" id="about">
+    <section className="hero is-fullheight" id="about">
       <div className="container">
         <h1 className="title is-1">
           About me

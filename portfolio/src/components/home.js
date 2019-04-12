@@ -24,10 +24,10 @@ export default ({ data }) => (
       </div>
       <div className="" id="greetings">
         <h1 id="title">
-          Good {getHour() || "day"}!
-          <span role="img" aria-labelledby="handwave">👋🏾</span>
+          Good {getHour() || "day"},
+          {/* <span role="img" aria-labelledby="handwave">👋🏾</span> */}
         </h1>
-        <h2 id="my-name">My name is Egan Bisma.</h2>
+        <h2 id="my-name">I'm Egan Bisma.</h2>
       </div>
       <div id="more-intro">
         <h2 className="title home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
