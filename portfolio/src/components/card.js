@@ -11,8 +11,8 @@ export default function card(props) {
         <div class="card">
             <header class="card-header">
                 <p class="card-header-title">
-                    <span className="project_title">{name}</span>
                     <div className="tags">
+                        <span className="project_title tag is-medium">{name}</span>
                         {tags}
                     </div>
                 </p>
@@ -26,7 +26,7 @@ export default function card(props) {
                             {list}
                         </div>
                     </div>
-                    <div className="media-rigth">
+                    <div className="media-right">
                         <p class={`image ${icon_class}`}>
                             <img src={icon} className="" alt="project image" />
                         </p>
@@ -43,7 +43,7 @@ export default function card(props) {
                 <p class="card-footer-item">
                     {source
                         ? <a href={source} target="_blank" className="is-outlined has-text-weight-bold">{"<source/>"}</a>
-                        : <p className="has-text-weight-bold has-text-dark">coming soon...</p>
+                        : <p className="has-text-grey">coming soon...</p>
                     }
                 </p>
             </footer>

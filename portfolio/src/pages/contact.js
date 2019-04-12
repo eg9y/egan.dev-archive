@@ -6,12 +6,13 @@ export default function form() {
     return (
         <Layout>
             <div class="section">
-                <form name="contact" method="POST" action="/" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="field">
                         <p>
                             <label className="label">
                                 Your Name:
-                                <input className="input is-info" type="text" name="name"
+                                <input className="input is-dark" type="text" name="name"
                                     placeholder="e.g Alex Smith" />
                             </label>
                         </p>
@@ -20,7 +21,7 @@ export default function form() {
                         <p>
                             <label className="label">
                                 Your Email:
-                                <input className="input is-info" type="email" name="email"
+                                <input className="input is-dark" type="email" name="email"
                                     placeholder="e.g asmith@hotmail.com" />
                             </label>
                         </p>

@@ -21,7 +21,6 @@ $navbar-box-shadow-size: 0 12px 0 0;
     -o-transition:      $what $time $how;
     transition:         $what $time $how;
 }
-
 .project_title {
 	padding-right: 1vw;
 	font-size: 2vw;
@@ -38,6 +37,10 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 .cramwithme-pad {
 	padding-bottom: 13vh;
+}
+
+.navy-color {
+	color: $navy;
 }
 
 #logo {

@@ -13,7 +13,7 @@ export default ({ data }) => (
   <section className="section is-bold is-small get-into-view" id="projects">
     <div className="section">
       <h1 className="title is-2">Side Projects</h1>
-      <h4 className="subtitle is-5">Here are a list of projects I developed.</h4>
+      <h4 className="subtitle">Here are a list of projects I developed.</h4>
     </div>
     <div className="">
       <section className="columns">
@@ -31,10 +31,10 @@ export default ({ data }) => (
             }
             tags={
               <span class="is-pulled-right">
-                <span class="tag  is-dark">Vue</span>
-                <span class="tag  is-dark">Firebase</span>
-                <span class="tag  is-dark">TravisCI</span>
-                <span class="tag  is-dark">Algolia</span>
+                <span class="tag  is-dark is-rounded">Vue</span>
+                <span class="tag  is-dark is-rounded">Firebase</span>
+                <span class="tag  is-dark is-rounded">TravisCI</span>
+                <span class="tag  is-dark is-rounded">Algolia</span>
               </span>
             }
             icon={lofo}
@@ -54,8 +54,8 @@ export default ({ data }) => (
             }
             tags={
               <span class="is-pulled-right">
-                <span class="tag  is-dark">Django</span>
-                <span class="tag  is-dark">Docker</span>
+                <span class="tag  is-dark is-rounded">Django</span>
+                <span class="tag  is-dark is-rounded">Docker</span>
               </span>
             }
             icon={distributed_systems}
@@ -78,9 +78,9 @@ export default ({ data }) => (
             }
             tags={
               <span class="is-pulled-right is-medium">
-                <span class="tag is-dark">Node</span>
-                <span class="tag is-dark">Express</span>
-                <span class="tag is-dark">Socket.io</span>
+                <span class="tag is-dark is-rounded">Node</span>
+                <span class="tag is-dark is-rounded">Express</span>
+                <span class="tag is-dark is-rounded">Socket.io</span>
               </span>
             }
             icon={feelsociety}
@@ -99,9 +99,9 @@ export default ({ data }) => (
             }
             tags={
               <span class="is-pulled-right">
-                <span class="tag  is-dark">React</span>
-                <span class="tag  is-dark">GraphQL-Yoga</span>
-                <span class="tag  is-dark">Prisma</span>
+                <span class="tag  is-dark is-rounded">React</span>
+                <span class="tag  is-dark is-rounded">GraphQL-Yoga</span>
+                <span class="tag  is-dark is-rounded">Prisma</span>
               </span>
             }
             icon={cramwithme}
