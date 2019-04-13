@@ -125,7 +125,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	// min-height: 500px;
 	height: 85vh;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows:0.1fr 1fr 1fr .5fr;
+	grid-template-rows:1fr .8fr .5fr;
 	padding-left: 4vw;
 
 	#booter {
@@ -137,7 +137,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 	#greetings {
 		grid-column: 1/span 3;
-		grid-row: 2/span 1;
+		grid-row: 1/span 1;
 		align-self: flex-end;
 		justify-self: flex-start;
 	}
@@ -145,7 +145,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	#more-intro {
 		max-width: 70vw;
 		grid-column: 1/span 1;
-		grid-row: 3/span 1;
+		grid-row: 2/span 1;
 		align-self: flex-start;
 		justify-self: flex-start;
 	}
@@ -179,6 +179,14 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			min-width: 35px;
 			justify-self: center;
 			margin-bottom: 2vw;
+		}
+
+		#job:hover, #code:hover, #letterboxd:hover {
+			position:relative;
+			opacity: 0.20;
+			-moz-opacity: 20%;
+			-webkit-opacity: 20%;
+			z-index: 2;
 		}
 
 		#job {
@@ -338,7 +346,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 @media screen and (max-width: 420px) {
 	.home_grid {
 		grid-template-columns: 1fr;
-		grid-template-rows:0.3fr 0.3fr 1fr;
+		grid-template-rows:0.3fr 0.3fr .5fr;
 		padding-left: 0;
 
 		
@@ -371,6 +379,10 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		#job, #code, #letterboxd {
 			align-self: start !important;
 			margin-bottom: 7vw !important;
+		}
+
+		#floor_line {
+			grid-row: 3/ span 1;
 		}
 	}
 
