@@ -164,12 +164,36 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 	#floor_line {
 		width: 90vw;
-		margin-top: 5vh;
-
 		grid-column: 1/span 3;
 		grid-row: 4/span 1;
 		justify-self: center;
 		align-self: center;
+
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 3fr;
+		grid-template-rows: 1fr;
+
+		#job, #code, #letterboxd {
+			grid-row: 1/span 1;
+			width: 6vw;
+			min-width: 35px;
+			justify-self: center;
+			margin-bottom: 2vw;
+		}
+
+		#job {
+			grid-column: 1/span 1;
+		}
+		#code {
+			grid-column: 2/span 1;
+		}
+		#letterboxd {
+			grid-column: 3/span 1;
+		}
+		#main-floor {
+			grid-column: 1/span 4;
+			grid-row: 1/span 1;
+		}
 	}
 
 	#desk {
@@ -310,107 +334,6 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	
 }
 
-// //tablet
-// @media screen and (min-width: 421px) and (max-width: 1000px) {
-	
-
-
-// 	#about-me-grid {
-// 		display: grid;
-// 		height: 80vh;
-// 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-// 		grid-template-rows:1fr 1fr 1fr 1fr;
-// 		// background-color: orange;
-	
-// 		#undergrad {
-// 			font-size: 12vw;
-// 			grid-column: 1/span 3;
-// 			grid-row: 1/span 3;
-// 			align-self: start;
-// 			line-height: 60%;
-// 			font-weight: bolder;
-// 		}
-// 		#nationality {
-// 			font-size: 13vw;
-// 			grid-column: 2/span 2;
-// 			grid-row: 2/span 3;
-// 			// align-self: end;
-// 			line-height: 120%;
-// 			font-weight: lighter;
-// 		}
-// 		#netflix {
-// 			font-size: 6vw;
-// 			grid-column: 1/ span 2;
-// 			grid-row: 3/ span 3;
-// 			align-self: start;
-// 			line-height: 100%;
-// 			font-weight: lighter;
-// 			font-style: italic;
-// 			font-family: 'Courier New', Courier, monospace;
-// 			text-align: left;
-// 		}
-// 		#self-taught {
-// 			font-size: 13vw;
-// 			grid-column: 3/span 3;
-// 			grid-row: 3/ span 3;
-// 			align-self: flex-start;
-// 			line-height: 60%;
-// 			font-weight: lighter;
-// 			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-// 		}
-// 		#dark-mode {
-// 			font-size: 12vw;
-// 			grid-column: 4/ span 2;
-// 			grid-row: 1/ span 2;
-// 			align-self: center;
-// 			word-spacing: 220%;
-// 			justify-self: flex-end;
-// 			line-height: 120%;
-// 			font-weight: lighter;
-// 			text-align: right;
-// 			font-family: Georgia, 'Times New Roman', Times, serif;
-// 		}
-// 		#resume {
-// 			font-size: 15vw;
-// 			grid-column: 1/ span 5;
-// 			grid-row: 3/ span 3;
-// 			align-self: center;
-// 			justify-self: center;
-// 			line-height: 60%;
-// 			font-weight: lighter;
-// 			text-align: center;
-// 		}
-	
-// 		#crack {
-// 			grid-column: 1/ span 2;
-// 			grid-row: 2/ span 1;
-// 			align-self: center;
-// 			justify-self: start;
-// 		}
-	
-// 		#doggo {
-// 			grid-column: 3/ span 2;
-// 			grid-row: 1/ span 2;
-// 			width: 28vw;
-// 			align-self: center;
-// 			justify-self: start;
-// 		}
-	
-// 		#playlist {
-// 			grid-column: 4/ span 3;
-// 			grid-row: 3/ span 1;
-// 			align-self: center;
-// 			justify-self: start;
-// 			transform: rotate(75deg);
-			
-// 			#iframe {
-// 				opacity: 0.3;
-// 			}
-// 		}
-// 	}
-	
-// }
-
 // Mobile
 @media screen and (max-width: 420px) {
 	.home_grid {
@@ -443,6 +366,11 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 		#booter {
 			justify-self: center;
+		}
+
+		#job, #code, #letterboxd {
+			align-self: start !important;
+			margin-bottom: 7vw !important;
 		}
 	}
 

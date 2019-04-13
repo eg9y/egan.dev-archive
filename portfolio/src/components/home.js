@@ -3,7 +3,10 @@ import { graphql } from "gatsby"
 
 import Footer from './footer'
 
-import floor_line from "./images/checkthis.png"
+import floor_line from "./images/floor_line.png"
+import code from "./images/code.svg"
+import job from "./images/job.svg"
+import letterboxd from "./images/letterboxd.svg"
 
 function getHour() {
   const hour = (new Date()).getHours();
@@ -19,9 +22,9 @@ function getHour() {
 export default ({ data }) => (
   <section className="hero is-medium is-bold is-fullheight get-into-view-main">
     <section className="home_grid">
-      <div id="booter">
+      {/* <div id="booter">
         <Footer />
-      </div>
+      </div> */}
       <div className="" id="greetings">
         <h1 id="title">
           <span role="img" aria-labelledby="handwave" id="greeting-hand">👋🏾</span>
@@ -36,7 +39,22 @@ export default ({ data }) => (
         <p className="title is-5 feel_good">Please, make yourself at home</p>
       </div>
       <div id="floor_line" className="showMe">
-        <img src={floor_line} alt="" />
+        <figure className="image is-32x32" id="code">
+          <a href="https://github.com/VVNoodle" target="_blank">
+            <img src={code} />
+          </a>
+        </figure>
+        <figure className="image is-32x32" id="job" >
+          <a href="https://www.linkedin.com/in/eganbisma/" target="_blank">
+            <img src={job} alt="" />
+          </a>
+        </figure>
+        <figure className="image is-32x32" id="letterboxd" >
+          <a href="https://letterboxd.com/egan/" target="_blank">
+            <img src={letterboxd} id="letterboxd" alt="" />
+          </a>
+        </figure>
+        <img src={floor_line} id="main-floor" alt="" />
       </div>
     </section>
   </section>
