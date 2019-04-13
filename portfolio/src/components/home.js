@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Footer from './footer'
 
-import floor_line from "./images/floor_line.svg"
+import floor_line from "./images/checkthis.png"
 
 function getHour() {
   const hour = (new Date()).getHours();
@@ -24,16 +24,18 @@ export default ({ data }) => (
       </div>
       <div className="" id="greetings">
         <h1 id="title">
-          Good {getHour() || "day"},
-          {/* <span role="img" aria-labelledby="handwave">👋🏾</span> */}
+          <span role="img" aria-labelledby="handwave" id="greeting-hand">👋🏾</span>
+          <span className="showMe">
+            Good {getHour() || "day"},
+          </span>
         </h1>
-        <h2 id="my-name">I'm Egan Bisma.</h2>
+        <h2 id="my-name" className="showMe">I'm Egan Bisma.</h2>
       </div>
-      <div id="more-intro">
+      <div id="more-intro" className="showMe">
         <h2 className="title home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
         <p className="title is-5 feel_good">Please, make yourself at home</p>
       </div>
-      <div id="floor_line">
+      <div id="floor_line" className="showMe">
         <img src={floor_line} alt="" />
       </div>
     </section>

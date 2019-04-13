@@ -8,7 +8,8 @@ export default ({ data, location }) => {
       <section className="hero is-medium is-bold">
         <div className="hero-body">
           <div className="container">
-            <h2 className="title">{data.allMarkdownRemark.totalCount} Posts</h2>
+            <h2 className="title is-1">Blog</h2>
+            <h2 className="subtitle">{data.allMarkdownRemark.totalCount} Posts</h2>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <div key={node.id}>
                 <Link

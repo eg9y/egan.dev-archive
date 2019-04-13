@@ -6,7 +6,7 @@ import letterboxd from '../components/images/letterboxd.svg'
 
 export default function footer() {
     return (
-        <div className="section columns is-mobile">
+        <div className="section columns is-mobile showMe">
             <div className="column is-4">
                 <figure className="image is-32x32">
                     <a href="https://github.com/VVNoodle" target="_blank">

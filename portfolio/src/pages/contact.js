@@ -5,7 +5,17 @@ import Layout from '../components/layout'
 export default function form() {
     return (
         <Layout>
-            <div class="section">
+            <div className="section">
+                <h1 className="is-1 title">Contact</h1>
+                <h2 className="is-4 subtitle">
+                    Starting a new project?
+                    <br />
+                    Recruiting a Fullstack/Software Engineering Intern or New Grad?
+                    <br />
+                    Or just down to chat?
+                    <br />
+                    Feel free to message!
+                </h2>
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="field">
@@ -26,7 +36,7 @@ export default function form() {
                             </label>
                         </p>
                     </div>
-                    <div class="field">
+                    <div className="field">
                         <p>
                             <label className="label">
                                 Message:
@@ -35,9 +45,9 @@ export default function form() {
                             </label>
                         </p>
                     </div>
-                    <div class="field">
-                        <p class="control">
-                            <button class="button is-dark">
+                    <div className="field">
+                        <p className="control">
+                            <button className="button is-dark">
                                 Submit
                             </button>
                         </p>

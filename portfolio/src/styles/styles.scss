@@ -21,6 +21,56 @@ $navbar-box-shadow-size: 0 12px 0 0;
     -o-transition:      $what $time $how;
     transition:         $what $time $how;
 }
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(xx);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
+
+.showMe{
+	opacity: 0;
+	animation-name: yourAnimation;
+	animation-duration: .5s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes handshake{
+    0%{
+		transform: rotate(10deg);
+        }
+    25%{
+		transform: rotate(-10deg);
+		}
+    55%{
+		transform: rotate(20deg);
+		}
+	75% {
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+#greeting-hand{
+	display: inline-block;
+	animation-name: handshake;
+	animation-duration: .5s;
+	animation-delay: .2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	transform-origin:right bottom;
+}
+
 .project_title {
 	padding-right: 1vw;
 	font-size: 2vw;
@@ -41,6 +91,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 .navy-color {
 	color: $navy;
+	color: rgb(102, 101, 101);
 }
 
 #logo {
@@ -113,12 +164,12 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 	#floor_line {
 		width: 90vw;
-		margin-top: 8vh;
+		margin-top: 5vh;
 
 		grid-column: 1/span 3;
 		grid-row: 4/span 1;
 		justify-self: center;
-		align-self: end;
+		align-self: center;
 	}
 
 	#desk {
@@ -144,7 +195,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 
 
 #navbar-dropit {
-	@include box-shadow(0px,-2px,15px,0, rgba(135, 135, 135, 0.6));
+	@include box-shadow(0px,-2px,25px,0, rgba(135, 135, 135, 0.6));
 	@include transition(all,1s,ease-out);
 }
 
@@ -370,7 +421,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		
 
 		#greetings {
-			justify-self: center;
+			justify-self: left;
+			padding-left: 15vw;
 			#my-name {
 				font-size: 1.5rem !important; 
 			}
