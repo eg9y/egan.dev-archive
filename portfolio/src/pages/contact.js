@@ -9,7 +9,7 @@ export default function form() {
             <div className="section" id="contact-grid">
                 <div id="form-grid">
                     <h1 className="is-1 title">Contact</h1>
-                    <h2 className="is-4 subtitle">
+                    <h2 className="is-6 subtitle">
                         Starting a new project?
                         <br />
                         Recruiting a Fullstack/Software Engineer Intern or New Grad?
@@ -25,7 +25,7 @@ export default function form() {
                                 <label className="label">
                                     Your Name:
                                     <input className="input is-dark" type="text" name="name"
-                                        placeholder="e.g Alex Smith" />
+                                        placeholder="e.g Alex Smith" required />
                                 </label>
                             </p>
                         </div>
@@ -34,7 +34,7 @@ export default function form() {
                                 <label className="label">
                                     Your Email:
                                     <input className="input is-dark" type="email" name="email"
-                                        placeholder="e.g asmith@hotmail.com" />
+                                        placeholder="e.g asmith@hotmail.com" required />
                                 </label>
                             </p>
                         </div>
@@ -43,7 +43,7 @@ export default function form() {
                                 <label className="label">
                                     Message:
                                     <textarea className="textarea" name="message"
-                                        placeholder="Greetings Egan, I would like to lend you a job ASAP"></textarea>
+                                        placeholder="Greetings Egan, I would like to lend you a job ASAP" required></textarea>
                                 </label>
                             </p>
                         </div>

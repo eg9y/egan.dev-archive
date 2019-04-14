@@ -274,26 +274,30 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			grid-row: 2/span 1;
 			align-self: center;
 			display: grid;
-			grid-template-columns: .5fr 1fr;
-			grid-template-rows: .5fr 1fr;
-			figure {
-				grid-column: 1/span 1;
-				grid-row: 1/span 2;
+			grid-column-gap: 2vw;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr .5fr;
+			#profile-pic {
+				grid-column: 1/span 2;
+				grid-row: 1/span 1;
 				img {
 					border: 4px solid #000;
-					border-radius: 10%;
 				}
 			}
 			p {
 				font-weight: bold;
 			}
 			#check-resume {
-				grid-column: 2/ span 1;
-				grid-row: 1/span 1;
+				grid-column: 1/ span 1;
+				grid-row: 2/span 1;
+				font-size: 3vw !important;
+				text-align: left;
 			}
 			#check-contact {
 				grid-column: 2/span 1;
 				grid-row: 2/span 1;
+				font-size: 1.75vw !important;
+				text-align: left;
 			}
 		}
 	}
@@ -355,7 +359,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			grid-row: 2/span 1;
 			display:grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: 192px .5fr 1fr;
+			grid-template-rows: 1fr .5fr .5fr;
 			figure {
 				justify-self: center;
 				align-self: flex-start;
@@ -363,7 +367,6 @@ $navbar-box-shadow-size: 0 12px 0 0;
 				grid-row: 1/span 1;
 				img {
 					border: 4px solid #000;
-					border-radius: 10%;
 				}
 			}
 			p {
@@ -407,6 +410,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 	}
 	#contact-visual {
 		grid-row: 2/span 1;
-		height: 4vh;
+		img {
+			height: 20vh;
+		}
 	}
 }

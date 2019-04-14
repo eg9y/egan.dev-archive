@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import profile from "./images/profile.png"
-import clouds from "./images/clouds.svg"
-
 
 export default function about() {
   return (
-    <section className="section" id="about">
-      <h1 className="title is-1">
-        About me
-      </h1>
+    <section className="section">
+      <div className="section" id="about">
+        <h1 className="title is-1">
+          About me
+        </h1>
+      </div>
       <div id="about-me-grid">
         <section id="undergrad">
           <p className="content">
@@ -33,7 +33,7 @@ export default function about() {
             </p>
           <p className="content">
             When I'm not starring at VS Code, I find myself sketching at a park,
-            tossing random ingridients and calling it stir-fry, swimming at a generously heated outdoor pool,
+            tossing random ingridients onto the wok and calling it stir-fry, swimming at a generously heated outdoor pool,
             or sipping a cup of
             <span><a href="https://www.youtube.com/watch?v=1cvH8bCl14Y" target="_blank"> Teh tarik☕ </a>
             </span>
@@ -42,11 +42,11 @@ export default function about() {
           </p>
         </section>
         <div id="profile">
-          <figure className="image is-128x128">
+          <figure className="image" id="profile-pic">
             <img src={profile} alt="profile image" className="" />
           </figure>
           <p className="is-size-4 content" id="check-resume">
-            Check out my resume over
+            Check out my résumé over
               <span>
               <a href="https://drive.google.com/file/d/1FgZrO3A-zWkRdcP6ShdyNlmVw8dQVDDd/view?usp=sharing"
                 target="_blank"> here </a>
@@ -54,9 +54,7 @@ export default function about() {
           </p>
           <p className="is-size-5 content" id="check-contact">
             If you'd like to know more about me, or anything really, shoot up a message at the
-                <span>
-              <a href="/contact"> contact </a>
-            </span>
+                <span> <Link to="/contact">contact</Link> </span>
             page!
               </p>
         </div>
