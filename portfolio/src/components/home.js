@@ -27,10 +27,7 @@ export default ({ data }) => (
       </div> */}
       <div className="" id="greetings">
         <h1 id="title">
-          <span role="img" aria-labelledby="handwave" id="greeting-hand">👋🏾</span>
-          <span className="showMe">
-            Good {getHour() || "day"},
-          </span>
+          <span role="img" aria-labelledby="handwave" id="greeting-hand">👋🏾 </span><span className="showMe"> Good {getHour() || "day"},</span>
         </h1>
         <h2 id="my-name" className="showMe">I'm Egan Bisma.</h2>
       </div>

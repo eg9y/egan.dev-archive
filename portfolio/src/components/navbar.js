@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React, { Component } from 'react'
 
-import { findDOMNode } from 'react-dom'
 import '../styles/styles.scss'
 import ScrollView from './scroll_view'
 
@@ -19,7 +18,7 @@ export default class NavBar extends Component {
     render() {
         const { location, is_dropshadow } = this.props;
         return (
-            <nav className="navbar  is-spaced is-fixed-bottom is-warning" id={is_dropshadow ? "navbar-dropit" : "navbar-containit"} role="navigation" aria-label="main navigation">
+            <nav className="navbar is-spaced is-fixed-bottom is-warning showMe" id={is_dropshadow ? "navbar-dropit" : "navbar-containit"} role="navigation" aria-label="main navigation">
                 {this.name}
                 <div className={`navbar-menu navbar-end `} >
 
