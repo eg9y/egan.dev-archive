@@ -160,6 +160,7 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		// -webkit-text-stroke: 2px #345995;
 		font-weight: bold;
 		font-family: 'Goudy Old Style';
+		font-size: 1.5vw;
 	}
 
 
@@ -275,8 +276,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 			align-self: center;
 			display: grid;
 			grid-column-gap: 2vw;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr .5fr;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr .2fr .5fr;
 			#profile-pic {
 				grid-column: 1/span 2;
 				grid-row: 1/span 1;
@@ -294,8 +295,8 @@ $navbar-box-shadow-size: 0 12px 0 0;
 				text-align: left;
 			}
 			#check-contact {
-				grid-column: 2/span 1;
-				grid-row: 2/span 1;
+				grid-column: 1/span 1;
+				grid-row: 3/span 1;
 				font-size: 1.75vw !important;
 				text-align: left;
 			}
@@ -310,7 +311,9 @@ $navbar-box-shadow-size: 0 12px 0 0;
 		grid-template-rows:0.3fr 0.3fr .5fr;
 		padding-left: 0;
 
-		
+		.feel_good {
+			font-size: 3vw !important;
+		}
 
 		#greetings {
 			justify-self: left;

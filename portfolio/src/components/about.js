@@ -33,7 +33,7 @@ export default function about() {
             </p>
           <p className="content">
             When I'm not starring at VS Code, I find myself sketching at a park,
-            tossing random ingridients onto the wok and calling it stir-fry, swimming at a generously heated outdoor pool,
+            tossing random ingredients onto the wok and calling it stir-fry, swimming at a generously heated outdoor pool,
             or sipping a cup of
             <span><a href="https://www.youtube.com/watch?v=1cvH8bCl14Y" target="_blank"> Teh tarik☕ </a>
             </span>
