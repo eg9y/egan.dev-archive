@@ -28,6 +28,7 @@ export default class About extends Component {
                              </h1>
                             <h2 className="subtitle is-5">P.S. These charts update daily (PRETTY KEWL HUH?)</h2>
                             <section class="section columns">
+
                                 <section className="column">
                                     <figure className="chart"><embed src="https://wakatime.com/share/@b63a290d-67c6-4893-8445-2fa163048351/cfa2df92-7685-46b2-ba72-806179d77a74.svg"></embed></figure>
                                 </section>

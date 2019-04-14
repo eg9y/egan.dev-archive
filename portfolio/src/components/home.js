@@ -35,7 +35,7 @@ export default ({ data }) => (
         <h2 id="my-name" className="showMe">I'm Egan Bisma.</h2>
       </div>
       <div id="more-intro" className="showMe">
-        <h2 className="title home_title">I'm an aspiring Software Engineering and Fullstack Web Developer</h2>
+        <h2 className="title home_title">I'm an aspiring Software Engineer and Fullstack Web Developer</h2>
         <p className="title is-5 feel_good">Please, make yourself at home</p>
       </div>
       <div id="floor_line" className="showMe">
