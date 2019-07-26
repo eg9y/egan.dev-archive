@@ -1,8 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
-import Card from './card'
+import Card from "./card"
 
 import lofo from "./images/lofo.svg"
 import distributed_systems from "./images/distributed_systems.svg"
@@ -24,10 +23,12 @@ export default ({ data }) => (
             preview="https://lostfound.ml"
             source="https://github.com/VVNoodle/Lo-Fo"
             list={
-              (<ul>
+              <ul>
                 <li>pin lost-found item locations within the map</li>
-                <li>search lost-found item catalogue with advanced search queries</li>
-              </ul>)
+                <li>
+                  search lost-found item catalogue with advanced search queries
+                </li>
+              </ul>
             }
             tags={
               <span class="is-pulled-right">
@@ -47,10 +48,10 @@ export default ({ data }) => (
             desc="Available in a RESTful API"
             source="https://github.com/VVNoodle/Fault-tolerant-scalable-Key-value-Store"
             list={
-              (<ul>
+              <ul>
                 <li>scalability through sharding incoming/existing keys</li>
                 <li>fault-tolerance through replication</li>
-              </ul>)
+              </ul>
             }
             tags={
               <span class="is-pulled-right">
@@ -71,10 +72,10 @@ export default ({ data }) => (
             preview="https://aqueous-coast-83469.herokuapp.com/"
             source="https://github.com/VVNoodle/CureHut"
             list={
-              (<ul>
+              <ul>
                 <li>find random chat rooms and chat anonymously</li>
                 <li>create daily journal logs anonymous to you</li>
-              </ul>)
+              </ul>
             }
             tags={
               <span class="is-pulled-right is-medium">
@@ -92,10 +93,15 @@ export default ({ data }) => (
             name="Cramwith.me"
             desc="online study group sessions with Pomodoro!"
             list={
-              (<ul>
-                <li>video-call random students/friends as an online study group</li>
-                <li>Each study session include break times to socialize with other students</li>
-              </ul>)
+              <ul>
+                <li>
+                  video-call random students/friends as an online study group
+                </li>
+                <li>
+                  Each study session include break times to socialize with other
+                  students
+                </li>
+              </ul>
             }
             tags={
               <span class="is-pulled-right">
@@ -110,7 +116,7 @@ export default ({ data }) => (
         </div>
       </section>
     </div>
-  </section >
+  </section>
 )
 
 export const query = graphql`

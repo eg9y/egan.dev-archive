@@ -1,56 +1,51 @@
 import React from "react"
-import { css } from "@emotion/core"
-import { StaticQuery, Link, graphql } from "gatsby"
-import { Helmet } from "react-helmet";
+import { StaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-import NavBar from './navbar'
+import NavBar from "./navbar"
 import favicon from "./images/favicon.svg"
-
 
 export default class Layout extends React.Component {
   state = {
-    'is_dropshadow': false
+    is_dropshadow: false,
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll)
   }
 
-
-  handleScroll = (event) => {
-    let scrollTop = window.scrollY;
+  handleScroll = event => {
+    let scrollTop = window.scrollY
     this.setState({
-      is_dropshadow: scrollTop >= 160 ? true : false
-    });
+      is_dropshadow: scrollTop >= 160 ? true : false,
+    })
   }
 
   render() {
-    const { children, location = "/" } = this.props;
+    const { children, location = "/" } = this.props
     return (
       <StaticQuery
         query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
+          query {
+            site {
+              siteMetadata {
+                title
+              }
+            }
           }
-        }
-      }
-    `
-        }
+        `}
         render={data => (
-          <div
-          >
+          <div>
             <Helmet>
-              <html class="bg has-navbar-fixed-bottom">
-              </html>
+              <html class="bg has-navbar-fixed-bottom" />
               <title>Egan Bisma</title>
-              <link rel="shortcut icon" type='image/svg' href={favicon} />
+              <link rel="shortcut icon" type="image/svg" href={favicon} />
             </Helmet>
-            <NavBar location={location} is_dropshadow={this.state.is_dropshadow} />
-            <section className="container is-fluid">
-              {children}
-            </section>
-          </ div>
+            <NavBar
+              location={location}
+              is_dropshadow={this.state.is_dropshadow}
+            />
+            <section className="container is-fluid">{children}</section>
+          </div>
         )}
       />
     )
